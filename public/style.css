@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Helvetica Neue", "Roboto", sans-serif;
+  
+  /* see https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scrollbars */
+  scrollbar-color: #666 transparent;
+  scrollbar-width: thin;
+}
+
+.break-line {
+  white-space: pre-line;
+}
+
+.basic-card .basic-card-image {
+  overflow: hidden;
+  max-height: 512px;
+}
+
+@media screen and (min-width: 400px) {
+  .basic-card {
+    margin: auto;
+    margin-top: 15vh;
+    width: 300px;
+
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    border: 3px solid rgba(50, 50, 50, 0.12);
+  }
+}

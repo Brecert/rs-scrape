@@ -1,0 +1,60 @@
+:root {
+  --card-padding: 20px;
+  --card-color: #333;
+}
+
+.embedded-card {
+  width: 300px;
+  overflow: hidden;
+}
+
+/* .embedded-card {
+  padding-left: var(--card-color-size);
+}
+
+.embedded-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: var(--card-color-size-calc);
+  background-color: #333;
+} */
+
+.embedded-card > .embedded-card-header ~ div {
+  padding-top: calc(var(--card-padding) / 2);
+}
+
+.embedded-card-image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+/* special */
+.embedded-card-hr {
+  background: var(--card-color, #333);
+  height: 5px;
+}
+
+/* containers */
+.embedded-card-header, .embedded-card-content {
+  padding: var(--card-padding);
+}
+
+/* content */
+.embedded-card-subtitle, .embedded-card-description {
+  color: #666;
+}
+
+.basic-card-subtitle {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .4px;
+}
+
+.embedded-card-description {
+  font-size: 16px;
+  line-height: 1.4;
+  overflow-wrap: break-word;
+}
